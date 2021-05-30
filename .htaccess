@@ -1,0 +1,22 @@
+#Options -indexes
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^vefatedenler$ index.php?sayfa=vefatedenler [NC]
+RewriteRule ^muhtarlar$ index.php?sayfa=muhtarlar [NC]
+RewriteRule ^mahalle$ index.php?sayfa=mahalle [NC]
+RewriteRule ^azalar$ index.php?sayfa=azalar [NC]
+RewriteRule ^yazarlar$ index.php?sayfa=yazarlar [NC]
+RewriteRule ^islemler$ index.php?sayfa=islemler [NC]
+RewriteRule ^fotograflar$ index.php?sayfa=fotograflar [NC]
+RewriteRule ^videolar$ index.php?sayfa=videolar [NC]
+RewriteRule ^etkinlikler$ index.php?sayfa=etkinlikler [NC]
+RewriteRule ^haberler$ index.php?sayfa=haberler [NC]
+RewriteRule ^koseyazilari$ index.php?sayfa=koseyazilari [NC]
+RewriteRule ^iletisim$ index.php?sayfa=iletisim [NC]
+
+RewriteRule ^koseyazisi-detay/(.*)$ index.php?sayfa=koseyazisi-detay&ID=$1 [NC]
+RewriteRule ^muhtar-detay/(.*)$ index.php?sayfa=muhtar-detay&ID=$1 [NC]
+RewriteRule ^haber-detay/(.*)$ index.php?sayfa=haber-detay&ID=$1 [NC]
+RewriteRule ^yazar-detay/(.*)$ index.php?sayfa=yazar-detay&ID=$1 [NC]
+RewriteRule ^etkinlik-detay/(.*)$ index.php?sayfa=etkinlik-detay&ID=$1 [NC]
