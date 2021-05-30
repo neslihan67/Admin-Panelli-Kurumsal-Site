@@ -1,22 +1,98 @@
 #Options -indexes
 RewriteEngine On
-RewriteBase /
+RewriteBase /admin/
 
-RewriteRule ^vefatedenler$ index.php?sayfa=vefatedenler [NC]
-RewriteRule ^muhtarlar$ index.php?sayfa=muhtarlar [NC]
-RewriteRule ^mahalle$ index.php?sayfa=mahalle [NC]
-RewriteRule ^azalar$ index.php?sayfa=azalar [NC]
-RewriteRule ^yazarlar$ index.php?sayfa=yazarlar [NC]
-RewriteRule ^islemler$ index.php?sayfa=islemler [NC]
-RewriteRule ^fotograflar$ index.php?sayfa=fotograflar [NC]
-RewriteRule ^videolar$ index.php?sayfa=videolar [NC]
-RewriteRule ^etkinlikler$ index.php?sayfa=etkinlikler [NC]
-RewriteRule ^haberler$ index.php?sayfa=haberler [NC]
-RewriteRule ^koseyazilari$ index.php?sayfa=koseyazilari [NC]
-RewriteRule ^iletisim$ index.php?sayfa=iletisim [NC]
+RewriteRule ^giris-yap$ login.php [NC]
+RewriteRule ^cikis$ index.php?sayfa=cikis [NC]
 
-RewriteRule ^koseyazisi-detay/(.*)$ index.php?sayfa=koseyazisi-detay&ID=$1 [NC]
-RewriteRule ^muhtar-detay/(.*)$ index.php?sayfa=muhtar-detay&ID=$1 [NC]
-RewriteRule ^haber-detay/(.*)$ index.php?sayfa=haber-detay&ID=$1 [NC]
-RewriteRule ^yazar-detay/(.*)$ index.php?sayfa=yazar-detay&ID=$1 [NC]
-RewriteRule ^etkinlik-detay/(.*)$ index.php?sayfa=etkinlik-detay&ID=$1 [NC]
+RewriteRule ^site-ayarlari$ index.php?sayfa=site-ayarlari [NC]
+RewriteRule ^aza-liste$ index.php?sayfa=aza-liste [NC]
+RewriteRule ^aza-ekle$ index.php?sayfa=aza-ekle [NC]
+RewriteRule ^aza-sil/(.*)$ index.php?sayfa=aza-sil&ID=$1 [NC]
+RewriteRule ^aza-duzenle/(.*)$ index.php?sayfa=aza-duzenle&ID=$1 [NC]
+
+RewriteRule ^muhtar-liste$ index.php?sayfa=muhtar-liste [NC]
+RewriteRule ^muhtar-ekle$ index.php?sayfa=muhtar-ekle [NC]
+RewriteRule ^muhtar-sil/(.*)$ index.php?sayfa=muhtar-sil&ID=$1 [NC]
+RewriteRule ^muhtar-duzenle/(.*)$ index.php?sayfa=muhtar-duzenle&ID=$1 [NC]
+
+RewriteRule ^yazar-liste$ index.php?sayfa=yazar-liste [NC]
+RewriteRule ^yazar-ekle$ index.php?sayfa=yazar-ekle [NC]
+RewriteRule ^yazar-sil/(.*)$ index.php?sayfa=yazar-sil&ID=$1 [NC]
+RewriteRule ^yazar-duzenle/(.*)$ index.php?sayfa=yazar-duzenle&ID=$1 [NC]
+
+RewriteRule ^duyuru-liste$ index.php?sayfa=duyuru-liste [NC]
+RewriteRule ^duyuru-ekle$ index.php?sayfa=duyuru-ekle [NC]
+RewriteRule ^duyuru-sil/(.*)$ index.php?sayfa=duyuru-sil&ID=$1 [NC]
+RewriteRule ^duyuru-duzenle/(.*)$ index.php?sayfa=duyuru-duzenle&ID=$1 [NC]
+
+RewriteRule ^etkinlik-liste$ index.php?sayfa=etkinlik-liste [NC]
+RewriteRule ^etkinlik-ekle$ index.php?sayfa=etkinlik-ekle [NC]
+RewriteRule ^etkinlik-sil/(.*)$ index.php?sayfa=etkinlik-sil&ID=$1 [NC]
+RewriteRule ^etkinlik-duzenle/(.*)$ index.php?sayfa=etkinlik-duzenle&ID=$1 [NC]
+
+RewriteRule ^haber-liste$ index.php?sayfa=haber-liste [NC]
+RewriteRule ^haber-ekle$ index.php?sayfa=haber-ekle [NC]
+RewriteRule ^haber-sil/(.*)$ index.php?sayfa=haber-sil&ID=$1 [NC]
+RewriteRule ^haber-duzenle/(.*)$ index.php?sayfa=haber-duzenle&ID=$1 [NC]
+
+
+RewriteRule ^linkler-liste$ index.php?sayfa=linkler-liste [NC]
+RewriteRule ^linkler-ekle$ index.php?sayfa=linkler-ekle [NC]
+RewriteRule ^linkler-sil/(.*)$ index.php?sayfa=linkler-sil&ID=$1 [NC]
+RewriteRule ^linkler-duzenle/(.*)$ index.php?sayfa=linkler-duzenle&ID=$1 [NC]
+
+RewriteRule ^mahallebilgi$ index.php?sayfa=mahallebilgi [NC]
+RewriteRule ^hizmetyeri$ index.php?sayfa=hizmetyeri [NC]
+
+
+RewriteRule ^muhtargorev-liste$ index.php?sayfa=muhtargorev-liste [NC]
+RewriteRule ^muhtargorev-ekle$ index.php?sayfa=muhtargorev-ekle [NC]
+RewriteRule ^muhtargorev-sil/(.*)$ index.php?sayfa=muhtargorev-sil&ID=$1 [NC]
+RewriteRule ^muhtargorev-duzenle/(.*)$ index.php?sayfa=muhtargorev-duzenle&ID=$1 [NC]
+
+RewriteRule ^muhtarsozu$ index.php?sayfa=muhtarsozu [NC]
+
+
+RewriteRule ^sponsor-liste$ index.php?sayfa=sponsor-liste [NC]
+RewriteRule ^sponsor-ekle$ index.php?sayfa=sponsor-ekle [NC]
+RewriteRule ^sponsor-sil/(.*)$ index.php?sayfa=sponsor-sil&ID=$1 [NC]
+RewriteRule ^sponsor-duzenle/(.*)$ index.php?sayfa=sponsor-duzenle&ID=$1 [NC]
+
+RewriteRule ^vefateden-liste$ index.php?sayfa=vefateden-liste [NC]
+RewriteRule ^vefateden-ekle$ index.php?sayfa=vefateden-ekle [NC]
+RewriteRule ^vefateden-sil/(.*)$ index.php?sayfa=vefateden-sil&ID=$1 [NC]
+RewriteRule ^vefateden-duzenle/(.*)$ index.php?sayfa=vefateden-duzenle&ID=$1 [NC]
+
+
+RewriteRule ^koseyazi-liste$ index.php?sayfa=koseyazi-liste [NC]
+RewriteRule ^koseyazi-ekle$ index.php?sayfa=koseyazi-ekle [NC]
+RewriteRule ^koseyazi-sil/(.*)$ index.php?sayfa=koseyazi-sil&ID=$1 [NC]
+RewriteRule ^koseyazi-duzenle/(.*)$ index.php?sayfa=koseyazi-duzenle&ID=$1 [NC]
+
+
+
+
+RewriteRule ^foto-liste$ index.php?sayfa=foto-liste [NC]
+RewriteRule ^foto-ekle$ index.php?sayfa=foto-ekle [NC]
+RewriteRule ^foto-sil/(.*)$ index.php?sayfa=foto-sil&ID=$1 [NC]
+RewriteRule ^foto-duzenle/(.*)$ index.php?sayfa=foto-duzenle&ID=$1 [NC]
+
+RewriteRule ^video-liste$ index.php?sayfa=video-liste [NC]
+RewriteRule ^video-ekle$ index.php?sayfa=video-ekle [NC]
+RewriteRule ^video-sil/(.*)$ index.php?sayfa=video-sil&ID=$1 [NC]
+RewriteRule ^video-duzenle/(.*)$ index.php?sayfa=video-duzenle&ID=$1 [NC]
+
+
+RewriteRule ^logoAyarlari$ index.php?sayfa=logoAyarlari [NC]
+
+
+
+RewriteRule ^tebligat-liste$ index.php?sayfa=tebligat-liste [NC]
+RewriteRule ^tebligat-ekle$ index.php?sayfa=tebligat-ekle [NC]
+RewriteRule ^tebligat-sil/(.*)$ index.php?sayfa=tebligat-sil&ID=$1 [NC]
+RewriteRule ^tebligat-duzenle/(.*)$ index.php?sayfa=tebligat-duzenle&ID=$1 [NC]
+
+
+
+
